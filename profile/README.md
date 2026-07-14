@@ -8,7 +8,7 @@
 
 ## About Antimonial
 
-Antinion is a minimal, expressive PHP framework. No magic, no JS, no coupled services.
+Antimonial is a minimal, expressive PHP framework. No magic, no JS, no coupled services.
 
 We build tools for developers who want clarity and control — explicit code over implicit conventions, transparent SQL over hidden abstractions.
 
@@ -18,7 +18,7 @@ We build tools for developers who want clarity and control — explicit code ove
 - **No ORM** — QueryBuilder exposes transparent SQL you can understand and optimize
 - **No template engine** — pure PHP views, extensible via `View::setEngine()` if you need one
 - **No coupled services** — jobs, queues, mail, cache are delegated externally
-- **Middleware as closures** — onion pattern without a Pipeline class
+- **Middleware via interfaces** — `MiddlewareInterface` + onion pattern, no Pipeline class
 - **Zero JS dependencies** — the framework has no frontend opinions
 
 ### Getting Started
@@ -31,7 +31,10 @@ composer require antimonial/framework
 <?php
 define('ROOT_PATH', __DIR__ . '/..');
 require ROOT_PATH . '/vendor/autoload.php';
-require ROOT_PATH . '/src/Core/Helpers.php';
+
+Antimonial\Core\Config::load('app');
+Antimonial\Core\Config::load('database');
+Antimonial\Core\ErrorHandler::enableDebug(true);
 
 $app = new Antimonial\Core\App();
 $app->run();
@@ -39,9 +42,9 @@ $app->run();
 
 ### Packages
 
-| Package | Description | Version |
-|---------|-------------|---------|
-| [`antimonial/framework`](https://github.com/antimonial/framework) | The core MVC framework | [![Latest](https://img.shields.io/github/v/release/antimonial/framework?style=flat-square&label=)](https://github.com/antimonial/framework/releases) |
+| Package | Description |
+|---------|-------------|
+| [`antimonial/framework`](https://github.com/antimonial/framework) | The core MVC framework |
 
 ## Documentation
 
