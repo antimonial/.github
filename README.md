@@ -4,10 +4,16 @@ Community health files and organization profile for the [Antimonial](https://git
 
 ## Contents
 
-- [`profile/README.md`](profile/README.md) — Organization profile displayed on [github.com/antimonial](https://github.com/antimonial)
+- [`profile/README.md`](profile/README.md) — Organization profile shown on [github.com/antimonial](https://github.com/antimonial)
+- [`profile/logo.png`](profile/logo.png) — Organization logo
 
 ## About
 
-Antimonial is a minimal, expressive PHP framework. No magic, no JS, no coupled services.
+Antimonial is a minimal, expressive PHP framework for server-rendered apps — no JavaScript dependencies by default.
 
-See [`antimonial/framework`](https://github.com/antimonial/framework) for the core framework.
+## Repositories
+
+| Repository | Description |
+|------------|-------------|
+| [`antimonial/framework`](https://github.com/antimonial/framework) | The core MVC framework (library) |
+| [`antimonial/antimonial`](https://github.com/antimonial/antimonial) | The starter application skeleton |

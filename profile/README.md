@@ -8,7 +8,7 @@
 
 ## About Antimonial
 
-Antimonial is a minimal, expressive PHP framework. No magic, no JS, no coupled services.
+Antimonial is a minimal, expressive PHP framework for server-rendered apps — no JavaScript dependencies by default.
 
 We build tools for developers who want clarity and control — explicit code over implicit conventions, transparent SQL over hidden abstractions.
 
@@ -22,6 +22,16 @@ We build tools for developers who want clarity and control — explicit code ove
 - **Zero JS dependencies** — the framework has no frontend opinions
 
 ### Getting Started
+
+The fastest way to start a new app is the official skeleton:
+
+```bash
+composer create-project antimonial/antimonial my-app
+cd my-app
+php -S localhost:8000 -t public public/index.php
+```
+
+To add the framework to an existing Composer project instead:
 
 ```bash
 composer require antimonial/framework
@@ -45,6 +55,7 @@ $app->run();
 | Package | Description |
 |---------|-------------|
 | [`antimonial/framework`](https://github.com/antimonial/framework) | The core MVC framework |
+| [`antimonial/antimonial`](https://github.com/antimonial/antimonial) | The starter application skeleton |
 
 ## Documentation
 
