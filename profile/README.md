@@ -10,8 +10,6 @@
 
 A PHP MVC framework where what you read is what runs.
 
-We build tools for developers who want clarity and control — explicit code over implicit conventions, transparent SQL over hidden abstractions.
-
 ### What's in the box
 
 - **Template engine with automatic escaping** — safe output by default, no scattering `htmlspecialchars` through your views.
