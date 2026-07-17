@@ -9,7 +9,7 @@ Community health files and organization profile for the [Antimonial](https://git
 
 ## About
 
-Antimonial is a minimal, expressive PHP framework for server-rendered apps — no JavaScript dependencies by default.
+Antimonial is a PHP MVC framework where what you read is what runs.
 
 ## Repositories
 

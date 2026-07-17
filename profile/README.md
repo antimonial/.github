@@ -8,18 +8,18 @@
 
 ## About Antimonial
 
-Antimonial is a minimal, expressive PHP framework for server-rendered apps — no JavaScript dependencies by default.
+A PHP MVC framework where what you read is what runs.
 
 We build tools for developers who want clarity and control — explicit code over implicit conventions, transparent SQL over hidden abstractions.
 
-### Design Principles
+### What's in the box
 
-- **No DI container** — import dependencies explicitly, like native PHP
-- **No ORM** — QueryBuilder exposes transparent SQL you can understand and optimize
-- **No template engine** — pure PHP views, extensible via `View::setEngine()` if you need one
-- **No coupled services** — jobs, queues, mail, cache are delegated externally
-- **Middleware via interfaces** — `MiddlewareInterface` + onion pattern, no Pipeline class
-- **Zero JS dependencies** — the framework has no frontend opinions
+- **Template engine with automatic escaping** — safe output by default, no scattering `htmlspecialchars` through your views.
+- **Router with named routes and regex params** — reverse them with the `route()` helper and match segments with patterns.
+- **Typed QueryBuilder** — you read the SQL, you tune the SQL.
+- **Sessions and CSRF** wired into the request cycle out of the box.
+- **Middleware through interfaces** — implement `MiddlewareInterface` and wrap the app like an onion. No pipeline DSL.
+- **PHPStan at max level** and a full test suite running in CI.
 
 ### Getting Started
 
