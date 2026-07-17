@@ -59,7 +59,8 @@ $app->run();
 
 ## Documentation
 
-See the [framework README](https://github.com/antimonial/framework#readme) for full documentation, usage examples, and directory structure.
+- [Framework Wiki](https://github.com/antimonial/framework/wiki) — routing, template engine, query builder, and API reference.
+- [Framework README](https://github.com/antimonial/framework#readme) — quick start, what's included, and security notes.
 
 ## License
 
