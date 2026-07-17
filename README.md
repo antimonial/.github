@@ -11,6 +11,8 @@ Community health files and organization profile for the [Antimonial](https://git
 
 Antimonial is a PHP MVC framework where what you read is what runs.
 
+The framework never guesses what you mean: you declare the database table on each model and the view directory in your bootstrap. Nothing is inferred from class names or file locations.
+
 ## Repositories
 
 | Repository | Description |

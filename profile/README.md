@@ -10,6 +10,7 @@
 
 A PHP MVC framework where what you read is what runs.
 
+The framework never guesses what you mean: you declare the database table on each model and the view directory in your bootstrap. Nothing is inferred from class names or file locations.
 ### What's in the box
 
 - **Template engine with automatic escaping** — safe output by default, no scattering `htmlspecialchars` through your views.
